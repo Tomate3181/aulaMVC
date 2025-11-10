@@ -1,0 +1,173 @@
+/* Importando a fonte Fira Code - famosa no mundo dev e perfeita para terminais */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+/* --- Configurações Globais: A Base do Terminal --- */
+body {
+    background-color: #0c0c0c; /* Preto absoluto, como o vácuo do espaço */
+    color: #c0c0c0; /* Cinza claro para o texto padrão */
+    font-family: 'Fira Code', monospace; /* A fonte do poder */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* --- A "Janela" do Terminal --- */
+.terminal-window {
+    width: 90%;
+    max-width: 1000px;
+    border: 2px solid #1793d1; /* A cor ciano icônica do Arch */
+    box-shadow: 0 0 20px rgba(23, 147, 209, 0.6); /* Efeito de brilho (glow) */
+    padding: 25px;
+    background-color: #000;
+}
+
+/* --- A Logo em ASCII Art --- */
+.ascii-art {
+    color: #1793d1;
+    font-size: 14px;
+    line-height: 1.1;
+    /* text-align: center; */
+    margin-bottom: 30px;
+    white-space: pre; 
+    /* Garante que o texto pré-formatado não quebre linha */
+}
+
+.ascii-align {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- O Título com Prompt de Comando e Cursor Piscando --- */
+h1 {
+    color: #1793d1; /* Ciano */
+    letter-spacing: 1px;
+    text-transform: lowercase; /* Comandos são em minúsculas */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+h1::before {
+    content: '[user@aulamvc ~]$ '; /* O prompt clássico */
+    color: #4e9a06; /* Verde para o usuário e host */
+    padding-right: 10px;
+}
+
+/* O cursor piscando! */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.5em;
+    background-color: #c0c0c0;
+    margin-left: 8px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* --- Tabela com Estilo de Saída de Comando --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border: 1px solid rgba(23, 147, 209, 0.3);
+}
+
+th {
+    color: #1793d1;
+    text-transform: uppercase;
+}
+
+/* --- Links e Ações --- */
+a {
+    color: #1793d1;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+a:hover {
+    background-color: #1793d1;
+    color: #000;
+}
+
+a.button-add {
+    display: inline-block;
+    border: 1px solid #1793d1;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+a.button-add:hover {
+    background-color: #1793d1;
+    color: #000;
+}
+
+/* --- Formulário como se estivesse editando um arquivo (tipo nano/vim) --- */
+form {
+    border: 1px solid rgba(23, 147, 209, 0.5);
+    padding: 20px;
+}
+
+form h1::before {
+    content: '[user@aulamvc ~]$ ./gerenciar_produto.sh --'; /* Prompt diferente para formulários */
+}
+
+input[type="text"], select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #c0c0c0;
+    color: #c0c0c0;
+    font-family: 'Fira Code', monospace;
+    font-size: 1em;
+    width: 100%;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    caret-color: #1793d1; /* Cor do cursor de texto dentro do input */
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-bottom: 1px solid #1793d1;
+}
+
+select {
+    background-color: #000; /* Fundo preto para as opções do select */
+}
+
+input[type="submit"] {
+    background-color: #4e9a06; /* Verde, como um comando de "executar/salvar" */
+    color: #000;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+input[type="submit"]:hover {
+    background-color: #73d216; /* Verde mais claro */
+}
+
+/* --- Link para Voltar --- */
+.link-voltar {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #c0c0c0;
+}
+.link-voltar:hover {
+    color: #1793d1;
+    background: none;
+}
