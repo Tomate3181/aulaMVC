@@ -12,6 +12,11 @@ body {
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
+    background-image: url('../img/background.jpg'); /* O caminho é relativo ao arquivo CSS! */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* A imagem não se repete */
+    background-attachment: fixed; /* A imagem fica fixa durante o scroll */
 }
 
 /* --- A "Janela" do Terminal --- */
@@ -170,4 +175,10 @@ input[type="submit"]:hover {
 .link-voltar:hover {
     color: #1793d1;
     background: none;
+}
+
+.terminal-window.main-terminal {
+    background-color: rgba(12, 12, 12, 0.65); /* Preto com 65% de opacidade */
+    backdrop-filter: blur(5px); /* O EFEITO MÁGICO de vidro fosco! */
+    border-color: rgba(23, 147, 209, 0.7); /* Borda também com um pouco de transparência */
 }

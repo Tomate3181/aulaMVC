@@ -7,7 +7,7 @@
     <title>Adicionar Novo Produto</title>
 </head>
 <body>
-    <div class="terminal-window">
+    <div class="terminal-window main-terminal">
         <div class="ascii-align">
 <pre class="ascii-art">
                    -`
