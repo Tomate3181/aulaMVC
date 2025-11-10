@@ -18,12 +18,12 @@
                 `+oooo:
                `+oooooo:
                -+oooooo+:
-             `/:-:++oooo+:
-            `/++++/++++oooo:
-           `/++++++++++++++:
-          `/+++ooooooooooooo/`
+             `/:-:++oooo+:                     \e[1;37m               #     \e[1;36m| *
+            `/++++/++++oooo:                   \e[1;37m a##e #%" a#"e 6##%  \e[1;36m| | |-^-. |   | \ /
+           `/++++++++++++++:                   \e[1;37m.oOo# #   #    #  #  \e[1;36m| | |   | |   |  X
+          `/+++ooooooooooooo/`                 \e[1;37m%OoO# #   %#e" #  #  \e[1;36m| | |   | ^._.| / \ \e[0;37mTM
          ./ooosssso++osssssso+`
-        .oossssso-````/ossssss+`
+        .oossssso-````/ossssss+`              
        -osssssso.      :sooooso-
       :osssssss/        ossssooo:
      /ossssssss/        +ssssooo/-
